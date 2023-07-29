@@ -1,0 +1,141 @@
+body{
+  margin:0;
+}
+.container{
+  height: 100vh;
+  width:100vw;
+   background-image: url("https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/11/netflix-india.jpeg?ssl=1");
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 2rem;
+
+}
+.logo{
+  color:white;
+ 
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 14px;
+    box-shadow: 0px -1px 20px 7px;
+}
+.logo:hover{
+  transform: scale(1.3);
+  transition: 1s ease-in-out;
+}
+.tabs{
+  display: flex;
+  gap:20px;
+}
+#fav{
+   font-size: 1.3rem;
+      color:white;
+      text-decoration: none;
+}
+#fav:hover{
+  color:red;
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+#lastSearch{
+      font-size: 1.3rem;
+      color:white;
+      text-decoration: none;
+}
+#lastSearch:hover{
+  color:red;
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.search-box{
+  text-align: center;
+    border: 2px solid black;
+    height: 200px;
+    width: 600px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    box-shadow: 0px 1px 14px 8px;
+    margin-top: -100px;
+}
+.search-box h1{
+  color:white;
+}
+input{
+  padding:6px;
+    width: 400px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.search-list{
+  
+  width: 450px;
+  margin-left: 70px;
+  margin-top: 10px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.search-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.search-list-item {
+    color: white;
+    display: flex;
+    border: 2px solid white;
+    gap: 2rem;
+    border-radius: 25px;
+    background-color: #c4331a;
+    border-radius: 20px;
+}
+/*.search-list-item:hover{
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+}*/
+
+.search-item-thumbnail{
+  width: 100px;
+  height:100px;
+}
+.search-item-thumbnail img{
+  width:100px;
+  height: 100px;
+border-radius: 20px;
+}
+
+/* Add the rest of your CSS styles here */
+
+/* Animation for the main container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  /* Set the initial opacity to 0 */
+  opacity: 0;
+  /* Apply the animation to the main container */
+  animation: fadeIn 2s forwards;
+}

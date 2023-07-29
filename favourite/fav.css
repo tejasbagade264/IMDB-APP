@@ -1,0 +1,39 @@
+.result-grid {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(220 190 190);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+    width: 60rem;
+    margin-left: 14rem;
+}
+.movie-poster{
+  height: 300px;
+    width: 300px;
+}
+.movie-poster img{
+  height: 100%;
+    width: 100%;
+}
+.movie-info{
+  width: 30rem;
+}
+
+.delete-btn {
+  height:25px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px;
+  border-radius: 20%;
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.5%;
+  cursor: pointer;
+  height: 25px;
+}
